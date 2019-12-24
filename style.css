@@ -1,0 +1,69 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/*untuk layar device berukuran besar*/
+@media screen and (min-width: 800px) {
+  .container {
+      width: 960px;
+      margin: 0 auto;
+  }
+}
+
+.image{
+  background-color: #555555;
+  padding: 50px;
+  text-align: center;
+}
+
+.image img{
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  border: 5px dashed rgb(238, 225, 41);
+}
+
+.image span{
+  padding: 20px;
+  background-color: rgb(238, 225, 41);
+  border-radius: 10px;
+}
+
+.date{
+  text-align: center;
+  background-color: #bbbbbb;
+  padding: 5px; 
+}
+
+.article{
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 300px;
+}
+
+.section-mystory, .section-info{
+  flex: 46%;
+  padding: 2%;
+}
+
+@media screen and (max-width: 500px){
+  .section-mystory, .section-info{
+    flex: 100%;
+  } 
+}
+
+.section-mystory h3{
+  padding: 5px;
+}
+
+.footer{
+  text-align: center;
+}
